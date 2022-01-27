@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 .nav {
   background-color: #fafbfc;
   display: flex;
@@ -38,7 +38,7 @@ export default {
 }
 .logo__container {
   width: 20%;
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   font-size: 2rem;
 }
 .menu__container {
@@ -57,5 +57,37 @@ export default {
   width: 30%;
   display: flex;
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 575px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .logo__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Major Mono Display", monospace;
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  .menu__container {
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__interactive {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+  }
+  .menu__another {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 </style>
